@@ -4,7 +4,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
   selector: 'ng-icon-sidebar',
   template: `
     <aside aria-label="Icon Sidebar"
-           class="ng-icon-sidebar ng-icon-sidebar--{{ isOpen ? 'opened' : 'closed' }}"
+           class="ng-icon-sidebar ng-icon-sidebar--{{ opened ? 'opened' : 'closed' }}"
            (focusin)="onFocusIn()"
            (focusout)="onFocusOut()"
            (mouseenter)="onMouseEnter()"
@@ -40,9 +40,13 @@ import { Component, ViewEncapsulation } from '@angular/core';
   encapsulation: ViewEncapsulation.None
 })
 export class SidebarComponent {
-  public isOpen = false;
+  private isOpen = false;
   private isFocusIn = false;
   private isMouseIn = false;
+
+  public get opened(): boolean {
+    return this.isOpen;
+  }
 
   public onFocusIn(): void {
     this.isFocusIn = true;

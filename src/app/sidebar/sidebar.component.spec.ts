@@ -32,40 +32,40 @@ describe('SidebarComponent', () => {
   });
 
   it('should be closed by default', () => {
-    expect(component.isOpen).toEqual(false);
+    expect(component.opened).toEqual(false);
   });
 
   it('should open upon focus in', () => {
     aside.dispatchEvent(focusInEvent);
-    expect(component.isOpen).toEqual(true);
+    expect(component.opened).toEqual(true);
   });
 
   it('should close upon focus out when mouse is not in', () => {
     aside.dispatchEvent(focusInEvent);
     aside.dispatchEvent(focusOutEvent);
-    expect(component.isOpen).toEqual(false);
+    expect(component.opened).toEqual(false);
   });
 
   it('should remain open upon focus out when mouse is in', () => {
     aside.dispatchEvent(mouseEnterEvent);
     aside.dispatchEvent(focusOutEvent);
-    expect(component.isOpen).toEqual(true);
+    expect(component.opened).toEqual(true);
   });
 
   it('should open upon mouse enter', () => {
     aside.dispatchEvent(mouseEnterEvent);
-    expect(component.isOpen).toEqual(true);
+    expect(component.opened).toEqual(true);
   });
 
   it('should close upon mouse leave when focus is not in', () => {
     aside.dispatchEvent(mouseEnterEvent);
     aside.dispatchEvent(mouseLeaveEvent);
-    expect(component.isOpen).toEqual(false);
+    expect(component.opened).toEqual(false);
   });
 
   it('should remain open upon mouse leave when focus is in', () => {
     aside.dispatchEvent(focusInEvent);
     aside.dispatchEvent(mouseLeaveEvent);
-    expect(component.isOpen).toEqual(true);
+    expect(component.opened).toEqual(true);
   });
 });
