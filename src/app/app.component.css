@@ -1,3 +1,13 @@
+/* Here is an example of how you can change the sidebar component's styling via
+   its exposed CSS classes. */
+
+.ng-icon-sidebar {
+  background-color: DarkGreen;
+}
+
+/* The code below exists just to style the sample demonstration content. You
+   will need to provide your own code for styling your content. */
+
 ul {
   list-style: none;
   margin: 0;
