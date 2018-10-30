@@ -1,7 +1,9 @@
 # ng-icon-sidebar
+[![NPM](https://nodei.co/npm/ng-icon-sidebar.png?compact=true)](https://nodei.co/npm/ng-icon-sidebar)
+
 An Angular sidebar component which displays a dock for icons when closed.
 
-[![NPM](https://nodei.co/npm/ng-icon-sidebar.png?compact=true)](https://nodei.co/npm/ng-icon-sidebar)
+Try out the **[demo on StackBlitz](https://stackblitz.com/github/brentmiller/ng-icon-sidebar)**.
 
 ## Installation
 
