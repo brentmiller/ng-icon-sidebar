@@ -4,7 +4,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
   selector: 'ng-icon-sidebar',
   template: `
     <aside aria-label="Icon Sidebar"
-           class="ng-icon-sidebar ng-icon-sidebar--{{opened ? 'opened' : 'closed'}}"
+           class="ng-icon-sidebar ng-icon-sidebar--{{ opened ? 'opened' : 'closed' }}"
            (mouseenter)="onMouseEnter()"
            (mouseleave)="onMouseLeave()"
            role="complementary">
@@ -25,12 +25,12 @@ import { Component, ViewEncapsulation } from '@angular/core';
     }
 
     .ng-icon-sidebar--closed {
-      width: 40px;
+      width: 48px;
     }
 
     .ng-icon-sidebar--opened {
       box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
-      width: 336px;
+      width: 256px;
     }
   `],
   encapsulation: ViewEncapsulation.None
