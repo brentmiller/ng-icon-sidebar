@@ -63,7 +63,7 @@ The sidebar is designed to close when the user:
 Specifically, the sidebar will close on the following events:
 
 * A `mouseleave` event bubbles up to the sidebar element's `<aside>` element when none of the sidebar's contents have keyboard focus. (It tracks keyboard focus via `focusin` and `focusout` events.)
-* A `focusout` event bubbles up to the sidebar element's `<aside>` element when the mouse is still inside the `<aside>`. (It tracks mouse presence via `mouseenter` and `mouseleave` events.)
+* A `focusout` event bubbles up to the sidebar element's `<aside>` element when the mouse is outside of the `<aside>`. (It tracks mouse presence via `mouseenter` and `mouseleave` events.)
 
 Thus you can progamatically open and close the sidebar by dispatching these events from within the sidebar's contents.
 
