@@ -1,6 +1,6 @@
 {
   "name": "ng-icon-sidebar",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "An Angular sidebar component which displays a dock for icons when closed",
   "author": "Brent Miller <brent.miller2@gmail.com> (https://www.linkedin.com/in/millerbrent/)",
   "license": "MIT",
