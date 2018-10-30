@@ -1,1 +1,1 @@
-export { SidebarModule } from './src/app/sidebar/sidebar.module';
+export { SidebarComponent } from './src/app/sidebar/sidebar.component';
