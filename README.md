@@ -1,5 +1,5 @@
 # ng-icon-sidebar
-Angular sidebar component which displays icons when closed
+An Angular sidebar component which displays a dock for icons when closed.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.4.
 
