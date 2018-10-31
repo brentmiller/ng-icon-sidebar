@@ -2,16 +2,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { SidebarComponent } from './sidebar/sidebar.component';
+import { SidebarModule } from './sidebar/sidebar.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    SidebarComponent
-  ],
-  imports: [
-    BrowserModule,
-  ],
+  declarations: [AppComponent],
+  imports: [BrowserModule, SidebarModule.forRoot()],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

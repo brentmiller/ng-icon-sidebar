@@ -13,15 +13,15 @@ npm install --save ng-icon-sidebar
 
 ## Usage
 
-Add `SidebarComponent` to your app module:
+Add `SidebarModule` to your app module:
 
 ```typescript
-import { SidebarComponent } from 'ng-icon-sidebar';
+import { SidebarModule } from 'ng-icon-sidebar';
 
 @NgModule({
   bootstrap: [AppComponent],
-  declarations: [AppComponent, SidebarComponent],
-  imports: [BrowserModule],
+  declarations: [AppComponent],
+  imports: [BrowserModule, SidebarModule.forRoot()],
 })
 class AppModule {}
 ```
