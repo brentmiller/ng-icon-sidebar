@@ -11,6 +11,8 @@
     "sidebar",
     "component"
   ],
+  "private": false,
+  "repository": "github:brentmiller/ng-icon-sidebar",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -18,7 +20,6 @@
     "test": "ng test",
     "lint": "ng lint"
   },
-  "private": false,
   "dependencies": {
     "@angular/common": "^6.1.0",
     "@angular/compiler": "^6.1.0",
